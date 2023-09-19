@@ -91,7 +91,5 @@ class PackageRepositoryTest {
         packageRepository.deleteById(newPackageEntity.getPackageSeq());
 
         assertTrue(packageRepository.findById(newPackageEntity.getPackageSeq()).isEmpty());
-
-
     }
 }
