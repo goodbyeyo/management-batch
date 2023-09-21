@@ -74,6 +74,7 @@ public class ExpirePassesJobConfig {
                 .build();
     }
 
+    @Bean
     private ItemProcessor<PassEntity, PassEntity> expirePassesItemProcessor() {
         return passEntity -> {
             passEntity.setStatus(PassStatus.EXPIRED);
@@ -82,6 +83,7 @@ public class ExpirePassesJobConfig {
         };
     }
 
+    @Bean
     private JpaItemWriter<PassEntity> expirePassesItemWriter() {
         return new JpaItemWriterBuilder<PassEntity>()
                 .entityManagerFactory(entityManagerFactory)

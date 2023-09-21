@@ -44,6 +44,10 @@ dependencies {
     implementation 'org.slf4j:jcl-over-slf4j'
     implementation 'ch.qos.logback:logback-classic'
 
+    //JsonStringType
+    implementation group: 'com.vladmihalcea', name: 'hibernate-types-52', version: '1.0.0'
+
+
 }
 
 tasks.named('test') {
