@@ -47,6 +47,10 @@ dependencies {
     //JsonStringType
     implementation group: 'com.vladmihalcea', name: 'hibernate-types-52', version: '1.0.0'
 
+    // mapstruct
+    implementation 'org.mapstruct:mapstruct:1.5.2.Final'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.2.Final'
+
 
 }
 
